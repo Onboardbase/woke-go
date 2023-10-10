@@ -7,7 +7,7 @@ import (
 	"os/exec"
 	"strings"
 
-	woke "github.com/onboardbase/woke"
+	woke "github.com/onboardbase/woke-go"
 )
 
 func StringPrompt(label string) string {

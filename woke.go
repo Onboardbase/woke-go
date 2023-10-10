@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	ad "github.com/onboardbase/woke/data"
+	ad "github.com/onboardbase/woke-go/data"
 
 	"github.com/charmbracelet/bubbles/viewport"
 	tea "github.com/charmbracelet/bubbletea"

@@ -10,53 +10,18 @@ Woke is product discoverability for OSS projects via CLI and Repo README.MD in a
 
 To use `woke`,
 
-```bash
-# npm
-yarn add woke-ads # npm i woke-ads
 
 # go
-go get github.com/onboardbase/woke-cli
+go get github.com/onboardbase/woke-go
 ```
 
 ## Usage
 
-### js
-
-Just before the entry point of your CLI, put the function.
-
-```js
-import WokeAd from 'woke-ads'
-
-function cliEntry(){
-  wokeAd()
-  // rest of your logic
-}
-cliEntry()
-```
-
-To make the opt-out option as a prompt
-
-```js
-import WokeAd from 'woke-ads'
-
-function cliEntry(){
-  wokeAd({prompt:true})
-  // rest of your logic
-}
-cliEntry()
-```
-
-## End users
-
-to opt-out woke-ads
-
-`npx woke-ads --opt-out true/false`
-
 ### go 
-`go get github.com/onboardbase/woke`
+`go get github.com/onboardbase/woke-go`
 
 ```go
-import (woke "github.com/onboardbase/woke-cli")
+import (woke "github.com/onboardbase/woke-go")
 
 func main(){
   woke.WokeAds()
@@ -79,7 +44,7 @@ Go to GO website, https://go.dev/doc/install. Download and install GO.
 go mod tidy
 ```
 
-Once all things are done, run the `dummy.go` file. This creates a view using tea, bubbletea, glamour, lipgloss. So, this is the dependency of the projects.
+Once all things are done, run the `cli.go` file. This creates a view using tea, bubbletea, glamour, lipgloss. So, this is the dependency of the projects.
 
 
 # Roadmap

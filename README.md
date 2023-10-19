@@ -2,25 +2,16 @@
 
 # Woke
 
-Woke is product discoverability for OSS projects via CLI and Repo README.MD in a non-intrusive way. This will help OSS projects generate revenue almost instantly once their users opt-in. 
+Woke is product discoverability for OSS projects via CLI and Repo README.MD in a non-intrusive way. This will help OSS projects generate revenue almost instantly once users of their projects opt-in for ads.
 
 </div>
 
-## Install
+## Usage in CLI Applications
 
-To use `woke`,
-
-
-# go
-```
-go get github.com/onboardbase/woke-go
-```
-
-## Usage
-
-### go 
+### Install woke with go 
 `go get github.com/onboardbase/woke-go`
 
+After installation, import `woke` as follows:
 ```go
 import (woke "github.com/onboardbase/woke-go")
 
@@ -29,23 +20,24 @@ func main(){
   cmd.example()
 }
 ```
-Or you can append this function inside your CLI
 
 ## Development
 
 ### Install GO
+You need to have Go installed on your development machine. Instructions on how to install go can be found here https://go.dev/doc/install
 
-```
-Go to GO website, https://go.dev/doc/install. Download and install GO.
-```
 
 ### Install dependencies 
-
+After forking this repository and cloning it to your development machine, install the dependencies by running this command from the project directory:
 ```
 go mod tidy
 ```
 
-Once all things are done, run the `cli.go` file. This creates a view using tea, bubbletea, glamour, lipgloss. So, this is the dependency of the projects.
+After installation, to start the application locally, run
+```
+go run ./go/cli.go
+```
+
 
 
 # Roadmap
